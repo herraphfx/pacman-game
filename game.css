@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Battlestar', sans-serif;                             
+}
+
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For the game */
+
+.general-container {
+    background-color: black;
+    width: 600px;
+    height: 690px;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.header_HS {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    
+}
+
+.high_score_text {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.score_container {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.score-text {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#map_01 {
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.tile{
+    width: 40px;
+    height: 40px;
+
+    /* make them stick together */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.wall{
+    background-size: 40px 40px;
+    background-image: url('img/Brick-wall.jpeg');
+    border: none;
+}
+
+
+/* coins should be make smaller than 50px; */
+.coin{
+    background-color: yellow;
+    border-radius: 50%;
+    transform: scale(0.3);
+}
+
+.emptyspace{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: inline-block;
+}
+
+
+.pacman{
+    background-size: 40px 40px;
+    background-image: url('img/pacman.gif');
+    background-repeat: no-repeat;
+}
+
+.blinky {
+    background-size: 40px 40px;
+    background-image: url('img/blinky.png');
+    background-repeat: no-repeat;
+}
+
+.clyde {
+    background-size: 40px 40px;
+    background-image: url('img/clyde.png');
+    background-repeat: no-repeat;
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.up {
+    transform: rotate(-90deg);
+}
+
+.right {
+    transform: rotate(0deg);
+}
+
+.left {
+    transform: scaleX(-1);
+}

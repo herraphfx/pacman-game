@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puck-man Returns</title>
+        <link href="https://fonts.cdnfonts.com/css/battlestar" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8H6GMRNQFH"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8H6GMRNQFH');
+        </script>
+    </head>
+    <body>
+        <div class="outer_container">
+
+            <!-- Header - High Score -->
+            <div class="header">
+                <h3>HIGH SCORE</h3>
+                <p class="high_score_text" id="high_score2"></p>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo_img">
+                <img src="img/puck_man.png" alt="Puck-man Logo" class="logo">
+            </div>
+
+            <!-- Start Button -->
+            <div>
+                <a href="layout.html" class="start_link">START</a>
+            </div>
+
+            <!-- Game Info -->
+            <div class="info">
+
+                <!-- Movement -->
+                <div class="move_info">
+                    <p>Move</p>
+                    <i class="fas fa-arrow-up fa-2x"></i>
+                    <i class="fas fa-arrow-down fa-2x"></i>
+                    <i class="fas fa-arrow-left fa-2x"></i>
+                    <i class="fas fa-arrow-right fa-2x"></i>
+                </div>
+
+                <!-- Sound -->
+                <div class="sound_info">
+                    <p>SOUND</p>
+                    <i class="bi bi-volume-mute-fill fa-2x" id="audio" onclick="audio_button()">
+                        <audio src="sounds/Pac-Man-Theme-Song.mp3" loop = "loop" id="audio_tag"></audio>
+                    </i>
+                    <!-- <i class="bi bi-volume-mute-fill fa-2x" id="size"></i> -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="start.js" charset="utf-8"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Battlestar', sans-serif;                             
+}
+
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* For the outer container */
+.outer_container {
+    box-sizing: border-box;
+    width: 600px;
+    height: 700px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* For the High Score */
+.header {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.high_score_text {
+    margin-top: 15px;
+}
+
+/* Logo */
+.logo {
+    width: 400px; 
+}
+.logo_img {
+    box-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Start */
+.start_link {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+}
+
+.start_link:hover {
+    text-shadow: 2px 2px 2px black, 0 0 35px blue, 0 0 5px darkblue;
+}
+
+/* Game Info */
+.info {
+    color: white;
+    display: flex;
+    text-shadow: 2px 2px 2px black, 0 0 35px blue, 0 0 5px darkblue;
+}
+
+.move_info {
+    margin-right: 80px;
+    text-align: center;
+}
+
+.move_info > p {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.sound_info {
+    margin-left: 80px;
+    text-align: center;
+}
+
+.sound_info > p {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+#audio {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
